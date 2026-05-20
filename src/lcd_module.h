@@ -22,6 +22,10 @@ void lcd_print(uint8_t col, uint8_t row, const char* text);
 // แสดงข้อความเต็มทั้ง 2 บรรทัด
 void lcd_show(const char* line1, const char* line2);
 
+// แสดงเวลาตัวใหญ่
+void lcd_show_big_time(uint8_t hour, uint8_t minute, bool show_colon);
+void lcd_draw_big_digit(uint8_t val, uint8_t col);
+
 // เปิด/ปิด backlight
 void lcd_backlight(bool on);
 

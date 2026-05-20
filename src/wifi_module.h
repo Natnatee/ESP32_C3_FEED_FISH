@@ -21,6 +21,7 @@ void wifi_start_portal();
 // สถานะ
 bool wifi_is_connected();
 bool wifi_ntp_synced();
+String wifi_get_ssid();
 
 // ดึงเวลาปัจจุบัน (struct tm)
 bool wifi_get_time(struct tm &timeinfo);
